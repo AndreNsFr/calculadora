@@ -2,7 +2,7 @@ primeira aplicação web usando javascript como um simples backend, fazendo o tr
 
 ainda não se está na ultima verção
 
----------------- metodos usados ----------------------
+---------------- metodos usados -----------------------
 variavaeis
 array 
 function
