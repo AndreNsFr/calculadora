@@ -1,0 +1,183 @@
+
+body{
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+    background-color: #5C4B51;
+    
+    
+}
+
+
+#potencia{
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+
+#C {
+    font-size: 14pt;
+    font-weight: bolder;
+}
+
+#raiz img{
+    width: 20px;
+    height: 20px;
+}
+
+#mais-menos img{
+    width: 20px;
+    height: 20px;
+}
+
+#dividir img{
+    width: 23px;
+    height: 23px;
+}
+
+#multiplicar img{
+    width: 23px;
+    height: 23px;
+}
+
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.calculadora1{
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr;
+    grid-template-rows: 1fr 40px 1fr 1fr 1fr 1fr ;
+    background-color: #8CBEB2;
+    width: 500px;
+    height: 800px;
+    padding: 12px;
+    border-radius: 15px;
+    gap: 5px;
+}
+
+
+.numeros {
+    border-radius: 5px;
+    font-size: 40pt;
+    display: grid;
+    place-items: center;
+    background-color: #F2EBBF;
+    padding: 5px;
+    border: 1px solid black;
+    
+}
+
+.numeros:active{
+    background-color: #d4cea6;
+}
+
+.numeros1 {
+    border-radius: 5px;
+    font-size: 40pt;
+    display: grid;
+    place-items: center;
+    background-color: whitesmoke;
+    padding: 5px;
+    border: 1px solid black;
+    
+}
+
+.resultado{
+    
+    text-wrap: wrap;
+    font-size: 20pt;
+    background-color: #F2EBBF;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.resultado1 {
+    border-radius: 5px;
+    font-size: 20pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgb(242, 235, 191);
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.operadores{
+    display: grid;
+    grid-column-start: 4 ;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    
+    
+    
+    gap: 5px;
+
+}
+
+.zero {
+    grid-column-start: 1; 
+    grid-column-end: 3;
+}
+
+#operadores2{
+    border-radius: 5px;
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: #F2EBBF;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#operadores2 button {
+    margin: 5px ;
+    padding-inline: 45px;
+    border-radius: 15px;
+    border: none;
+    background-color: #F06060;
+}
+
+#operadores2 button:active {
+    background-color: #aa4242;
+}
+
+
+.branco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F06060;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.branco:active {
+    background-color: #aa4242;
+}
+
+.historico {
+    background-color: #F2EBBF;
+}
+
+.historico:active{
+    background-color: #d4cea6;
+}
+
+
+.numeros:nth-child(14){
+    background-color: #F06060;
+}

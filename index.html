@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <container class="centro">
+            <container class="calculadora1">
+                <div class="resultado resultado1" id="res"></div>
+                <div class="historico numeros1" onclick="his()"><img src="src/historico.png" alt=""></div>
+
+                <div id="operadores2">
+                    <button onclick="limpar()" id="C">C</button>
+                    <button id="raiz" onclick="calcular(this.getAttribute('id'))"><sup>2</sup><img src="src/raiz.png" alt=""></button>
+                    <button id="potencia" onclick="calcular(this.getAttribute('id'))">x<sup>2</sup></button>
+                    <button id="mais-menos" onclick="Mais_ou_Menos()"><img src="src/menos ou mais.png" alt=""></button>
+                </div>
+
+                <button class="numeros" id="7"onclick="pegarNumero(this.textContent)">7</button>
+                <button class="numeros" id="8"onclick="pegarNumero(this.textContent)">8</button>
+                <button class="numeros" id="9"onclick="pegarNumero(this.textContent)">9</button>
+                <button class="numeros" id="4"onclick="pegarNumero(this.textContent)">4</button>
+                <button class="numeros" id="5"onclick="pegarNumero(this.textContent)">5</button>
+                <button class="numeros" id="6"onclick="pegarNumero(this.textContent)">6</button>
+                <button class="numeros" id="1"onclick="pegarNumero(this.textContent)">1</button>
+                <button class="numeros" id="2"onclick="pegarNumero(this.textContent)">2</button>
+                <button class="numeros" id="3"onclick="pegarNumero(this.textContent)">3</button>
+                <button class="numeros zero" id="0"onclick="pegarNumero(this.textContent)">0</button>
+                <button class="numeros" id="=" onclick="calcular(operador)" >=</button>
+
+                <aside class="operadores">
+                    <div id="dividir" class="branco" onclick="teste(this.getAttribute('id'))"><img src="src/dividir.png" alt=""></div>
+                    <div id="multiplicar" class="branco " onclick="teste(this.getAttribute('id'))" ><img src="src/vezes.png" alt=""></div>
+                    <div id="positivo" class="branco" onclick="teste(this.getAttribute('id'))" ><img src="src/mais.png" alt=""></div>
+                    <div id="negativo" class="branco" onclick="teste(this.getAttribute('id'))" ><img src="src/menos.png" alt=""></div>
+                </aside>
+            </container>
+        </container>
+    </body>
+</html>
