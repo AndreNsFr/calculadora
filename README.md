@@ -20,3 +20,5 @@ CSS : esse deu mais dor de cabeça, tive de usar display grid para tudo ficar em
 
 obs : faço essa nota mais para eu mesmo ler no futuro, para percerber o avanço nos estudos, então se alguem ler alem de mim, saiba;
 isso tudo é para "catalogar" oque eu fiz a grosso modo, para justamente, como citei anteriormente, ver o meu avanço.
+
+https://andrensfr.github.io/calculadora/
