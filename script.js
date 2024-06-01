@@ -8,7 +8,7 @@ function limpar(){
 }
 //PEGA O VALOR DIGITADO
 function pegarNumero(numT){
-
+    document.getElementById("res").style.justifyContent = "center"
     var numero = document.getElementById(numT).getAttribute("id")
     var visor = document.getElementById("res").innerHTML += numero
     
@@ -131,18 +131,19 @@ function calcular(operador) {
                 break;
 
                 case "raiz":
-                    calculoFun[fun] = visor
-                    var resultado = Number(calculoFun[0])  ** (1/2)
+                    var visor = document.getElementById("res").innerHTML
+                    var resultado = Number(visor)  ** (1/2)
                     document.getElementById("res").innerHTML = resultado
                     calculoFun[0] = resultado
                     resultado =   resultado + "<br>"
+                    visor = resultado
                     historico.push(resultado)
-                    return historico
+                    return historico  
                 break
 
                 case "potencia":
-                    calculoFun[fun] = visor
-                    var resultado = Number(calculoFun[0])  ** 2
+                    var visor = document.getElementById("res").innerHTML
+                    var resultado = Number(visor)  ** 2
                     document.getElementById("res").innerHTML = resultado
                     calculoFun[0] = resultado
                     resultado =   resultado + "<br>"
@@ -160,11 +161,28 @@ function calcular(operador) {
                 
         }
         
+        
+var contador = 0
+
 function Mais_ou_Menos(mais_ou_menos){
-    document.getElementById("res").innerHTML = ""
-    document.getElementById("res").innerHTML = "-" + visor
-    visor = "-" + visor
-}
+
+            
+        
+            
+            var hmm = document.getElementById("res").innerHTML
+            document.getElementById("res").innerHTML = ""
+            var maisOuMenos = document.getElementById("res").innerHTML = "-" + hmm
+            hmm = "-" + hmm
+            contador += 1
+            
+
+            if(contador % 2 == 0){
+                document.getElementById("res").innerHTML = visor
+            }
+            
+        }
+        
+
 
 function his(){
     document.getElementById("res").style.justifyContent = "start"
